@@ -14,9 +14,9 @@ function displayMovieInfo() {
         console.log(response);
 
         // Creates a div to hold the movie
-        for (let i = 0; i < response.Ratings.length; i++) {
-            $("#movies-view").append("<h3>" + response.Ratings[i].Source + ": " + response.Ratings[i].Value + " | </h3>");
-        }
+        // for (let i = 0; i < response.Ratings.length; i++) {
+        //     $("#movies-view").append("<h3>" + response.Ratings[i].Source + ": " + response.Ratings[i].Value + " | </h3>");
+        // }
         $("#movies-view").append("<img src=" + response.Poster + "/>" + "<br>");
         $("#movies-view").append("<h2>" + response.Title + "</h2>" + "<hr>");
         $("#movies-view").append("<h4>" + response.Year + " | " + response.Runtime + " | Rated: " + response.Rated + "</h4>");
